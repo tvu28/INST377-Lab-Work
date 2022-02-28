@@ -1,19 +1,148 @@
-YOUR NAME Lab 3: Flexbox Demo
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Lab 3 - CSS 2 - Flexbox and Responsive Pages</title>
+    <link rel='stylesheet' href='styles.css'/>
+  </head>
+  <body>
 
-today's date
-Database Demos
-Main Page
+<style>
+h4 {background-color: rgba(0,139, 139,0.8);
+    color:black;
+    border: 1px solid #fff;
+    width: 1263px;
+    display: flex;
+    justify-content: space-around;}
 
-Group Project Link (no site yet)
-Awesome Logo
-Github Link
+.menu { background-color: #5995DA;
+        color: rgb(255, 255, 255);
+        border: 1px solid #fff;
+        width: 1263px;
+        display: flex;
+        justify-content: space-around;}
 
-image_1
-image_2
-image_3
-image_4
-image_5
+.links {border: 1px solid #ffffff;  
+        display: flex;
+        justify-content: flex-end;}
 
-footer item 1
-footer item 2
-footer item 3
+.login {margin-left: 20px;}
+
+.header-container {color: #5995DA;
+                   background-color: #D6E9FE;
+                   display: flex;
+                   justify-content: center;}
+
+.header {width: 900px;
+         height: 300px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;}
+
+.photo-grid-container {display: flex;
+                       justify-content: center;}
+
+.photo-grid {width: 900px;
+             display: flex;
+             justify-content: center;
+             flex-wrap: wrap;}
+
+.photo-grid-item {border: 1px solid #fff;
+                  width: 300px;
+                  height: 300px;}
+
+.footer {display: flex;
+         justify-content: space-between;}
+
+.footer-item {border: 1px solid #fff;
+              background-color: #D6E9FE;
+              height: 200px;
+              flex: 1;}
+
+.footer-one {background-color: #5995DA;
+             flex: initial;
+             width: 300px;}
+
+.footer-two {flex: 2;}
+
+.footer-three {background-color: #5995DA;
+               flex: initial;
+               width: 300px;}
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+        <h4>Trieuduong Vu: Flexbox Demo</h4>
+
+<div class='menu'>
+    <div class='menu'>
+        <div class='date'>Feb 20, 2022</div>
+        <div class='links'>
+            <div class='signup'>Database Demos</div>      
+            <div class='login'>Main Page</div>         
+        </div>
+    </div>
+</div>
+
+<div class='header-container'>
+    <div class='header'>
+        <div class='subscribe'>Group Project Link</div>
+        <div class='logo'><img src='images/awesome-logo.svg'/></div>
+        <div class='My Github'><link src='https://github.com/tvu28'/></div>
+    </div>
+</div>
+
+<div class='photo-grid-container'>
+    <div class='photo-grid'>
+      <div class='photo-grid-item first-item'>
+        <img src='images/one.svg'/>
+      </div>
+      <div class='photo-grid-item'>
+        <img src='images/two.svg'/>
+      </div>
+      <div class='photo-grid-item'>
+        <img src='images/three.svg'/>
+      </div>
+      <div class='photo-grid-item'>
+        <img src='images/four.svg'/>
+      </div>
+      <div class='photo-grid-item last-item'>
+        <img src='images/five.svg'/>
+      </div>
+    </div>
+  </div>
+
+<div class='footer'>
+    <div class='footer-item footer-one'>Footer Item 1</div>
+    <div class='footer-item footer-two'>Footer Item 2</div>
+    <div class='footer-item footer-three'>Footer Item 3</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

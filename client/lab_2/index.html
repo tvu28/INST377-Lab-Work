@@ -2,18 +2,52 @@
 <html>
     <head>
         <title>Trieuduong Vu Lab 2 CSS Selectors</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" media=”screen” />
     </head>
     <body>
+
 <style>
-    body {background-color: powderblue;}
-    h1   {color: blue;}
-    p    {color: red;}
+h1  {background-color: rgba(0,139, 139,0.8);
+    display: flex;
+    flex-flow: row wrap;
+    border-radius: 4px;
+    justify-content: left;
+    padding: 10px;
+    margin-bottom: 15px;}
+
+.section_1  {background-color: #EFEFEF;
+            border: 2px dashed;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 15px;
+            margin-top: 5px;}
+
+.section_2 {background-color: skyblue;
+            border: 1px dashed #000;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 20px 25px;}
+
+.section_4 {display: block;
+            border-radius: 4px;
+            background-color: #ff8c00a6;
+            padding: 10px 30px;
+            max-width: 300px;
+            margin: 20px 200px;}
+
+.footer {width: 100%;
+        display: inline-block;
+        background-color: rgba(0,139, 139,0.8);
+        padding: 10px 15px;
+        margin: 0;
+        margin-top: 10px;}
 </style>
+
         <h1>TRIEUDUONG VU Lab 2: CSS Selectors</h1>
-         
+
         <h2>Goal Lists</h2>
         <p>These are my goals for the course</p>
+
+<div class='section_1'>
         <ul>
             <li>Learn about website development</li>
             <li>Understand another coding language</li>
@@ -28,21 +62,29 @@
             <li>ASTROWORLD</li>
             <li>PARTYNEXTDOOR 3</li>
             <li>Over It</li>
-        </ol>
-        
+        </ol>        
+</div>        
+
+<div class='section_2'>
         <h2>Inline Elements</h2>
         <p>This semester, I am taking <em>INST377</em><br><strong>which</strong> is a class I am looking <em><strong>forward</strong></em> to.</p>
+</div>        
         <hr>
 
+<div class='section_4'>
         <h2>Images</h2>
         <p>These are some mochi images</p>
+</div>
+
         <img src='./images/mochi.jpg' width='75' alt='A mochi ball in a bubble'/>
         <img src='./images/mochi.gif' width='75' alt='A dancing mochi ball'/>
         <img src='./images/mochi.png' width='75' alt='A mochi ball'/>
         <img src='./images/mochi.svg' alt='A mochi ball with Bézier handles'/>
-    
-    <h2>A link to my copy of the GitHub Repository</h2>
-    <p>The Repo <a href='https://github.com/tvu28/INST377-Lab-Work'>link</a>.</p>
+
+<div class='footer'>        
+        <h2>A link to my copy of the GitHub Repository</h2>
+        <p>The Repo <a href='https://github.com/tvu28/INST377-Lab-Work'>link</a>.</p>
+</div>
 
     </body>
 </html>
