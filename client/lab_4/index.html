@@ -8,36 +8,28 @@
   <body>
 
 <style>
-h4 {background-color: rgba(0,139, 139,0.8);
-    color:black;
-    border: 1px solid #fff;
-    width: 1263px;
-    display: flex;
-    justify-content: space-around;}
-
-.menu { background-color: #5995DA;
-        color: rgb(255, 255, 255);
-        border: 1px solid #fff;
-        width: 1263px;
-        display: flex;
-        justify-content: space-around;}
-
+.h4 {background-color: rgba(0,139, 139,0.8);
+     display: flex;}
+        
+.menu {background-color: #5995DA;
+       color: rgb(255, 255, 255);
+       border: 1px solid #fff;
+       display: flex;
+       justify-content: space-around;}
 .links {border: 1px solid #ffffff;  
         display: flex;
         justify-content: flex-end;}
-
 .login {margin-left: 20px;}
-
+      
 .header-container {color: #5995DA;
                    background-color: #D6E9FE;
                    display: flex;
                    justify-content: center;}
-
 .header {width: 900px;
-         height: 300px;
-         display: flex;
-         justify-content: space-between;
-         align-items: center;}
+               height: 300px;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;}
 
 .photo-grid-container {display: flex;
                        justify-content: center;}
@@ -69,7 +61,7 @@ h4 {background-color: rgba(0,139, 139,0.8);
                flex: initial;
                width: 300px;}
 
-               .carousel {
+.carousel {
     overflow: hidden;
     max-width: 600px;
     position: relative;
@@ -97,7 +89,7 @@ h4 {background-color: rgba(0,139, 139,0.8);
     justify-content: space-between;
     position: absolute;
     top: 50%;
-    transform: translateY(-50);
+    transform: translateY(-50%);
 }
 
 .carousel .carousel_actions button {
@@ -127,30 +119,30 @@ h4 {background-color: rgba(0,139, 139,0.8);
     }
 }
 </style>
-        <h4>Trieuduong Vu: Flexbox Demo</h4>
+<div class="h4">
+    <h4>Trieuduong Vu: Flexbox Demo</h4>
+</div>
 
-<div class='menu'>
-    <div class='menu'>
-        <div class='date'>Feb 20, 2022</div>
-        <div class='links'>
-            <div class='signup'>Database Demos</div>      
-            <div class='login'>Main Page</div>         
-        </div>
-    </div>
+<div class='menu-container'>
+  <div class='menu'>
+    <div class='date'>Feb 20, 2022</div>
+    <div class='links'>
+    <div class='signup'>Database Demos</div>    
+    <div class='login'>Main Page</div>        
+  </div>
 </div>
 
 <div class='header-container'>
-    <div class='header'>
-        <div class='subscribe'>Group Project Link</div>
-        <div class='logo'><img src='images/awesome-logo.svg'/></div>
-        <div class='My Github'><a link='https://github.com/tvu28'></div>
-    </div>
+  <div class='header'>
+    <div class='subscribe'>Group Project Link</div>
+    <div class='logo'><img src='images/awesome-logo.svg'/></div>
+    <div class='My Github'><a link='https://github.com/tvu28'></div>
+  </div>
 </div>
 
-<div class='photo-grid-container'>
-  <button id="carousel_button--prev">prev</button>
-    <div class='carousel'>
-      <div class='carousel_item visible-item'>
+<div class="photo-grid-container">
+  <div class='carousel'>
+      <div class='carousel_item carousel_item--visible'>
         <img src='images/one.svg'/>
       </div>
       <div class='carousel_item'>
@@ -165,9 +157,15 @@ h4 {background-color: rgba(0,139, 139,0.8);
       <div class='carousel_item'>
         <img src='images/five.svg'/>
       </div>
+
+      <div class="carousel_actions">
+        <button id="carousel_button--prev">Prev</button>
+        <button id="carousel_button--next">Next</button>
+      </div>
     </div>
-    <button id="carousel_button--next">next</button>
 </div>
+
+    <script src="script.js"></script>
 
 <div class='footer'>
     <div class='footer-item footer-one'>Footer Item 1</div>
