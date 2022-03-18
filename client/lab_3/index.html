@@ -10,15 +10,23 @@
 <style>
 .h4 {background-color: rgba(0,139, 139,0.8);
      display: flex;}
-  
+
+.menu-container {color: #fff;
+                 background-color: #5995DA; 
+                 padding: 20px 0;
+                 display: flex;
+                 justify-content: space-around;}
 .menu {background-color: #5995DA;
        color: rgb(255, 255, 255);
-       border: 1px solid #fff;
+       border: 1px solid #ffffff;
        display: flex;
-       justify-content: space-around;}
+       width: 900px;
+       justify-content: space-between;}
 .links {border: 1px solid #ffffff;  
         display: flex;
         justify-content: flex-end;}
+.links a {color: #ffffff;
+          text-decoration: none;}
 .login {margin-left: 20px;}
 
 .header-container {color: #5995DA;
@@ -30,6 +38,12 @@
          display: flex;
          justify-content: space-between;
          align-items: center;}
+.header a {color: #5995DA;
+           text-decoration: none;}
+.subscribe {align-self: flex-end;
+            margin-bottom: 20px;} 
+.github {align-self: flex-end;
+         margin-bottom: 20px;}
 
 .photo-grid-container {display: flex;
                        justify-content: center;}
@@ -64,8 +78,8 @@
   <div class='menu'>
     <div class='date'>Feb 20, 2022</div>
     <div class='links'>
-    <div class='signup'>Database Demos</div>    
-    <div class='login'>Main Page</div>
+      <div class='signup'><a href='data.html'>Database Demos</a></div>    
+      <div class='login'><a href='index.html'>Main Page</a></div>
     </div>         
   </div>
 </div>
@@ -74,7 +88,7 @@
   <div class='header'>
     <div class='subscribe'>Group Project Link</div>
     <div class='logo'><img src='images/awesome-logo.svg'/></div>
-    <div class='My Github'><a link='https://github.com/tvu28'>My Github</div>
+    <div class='github'><a href='https://github.com/tvu28'>My Github</a></div>
   </div>
 </div>
 
@@ -99,9 +113,9 @@
 </div>
 
 <div class='footer'>
-  <div class='footer-item footer-one'>Footer Item 1</div>
-  <div class='footer-item footer-two'>Footer Item 2</div>
-  <div class='footer-item footer-three'>Footer Item 3</div>
+  <div class='footer-item footer-one'><strong>footer item 1</strong></div>
+  <div class='footer-item footer-two'><strong>footer item 2</strong></div>
+  <div class='footer-item footer-three'><strong>footer item 3</strong></div>
 </div>
   </body>
 </html>

@@ -7,27 +7,28 @@
 
 <style>
 h1  {background-color: rgba(0,139, 139,0.8);
-    display: flex;
-    flex-flow: row wrap;
-    border-radius: 4px;
-    justify-content: left;
-    padding: 10px;
-    margin-bottom: 15px;}
+     display: inline-block;
+     width: 100%;
+     justify-content: left;
+     padding: 10px 15px;
+     margin: 0;
+     margin-bottom: 10px;}
 
 .nav {background-color: rgba(0,139, 139,0.4);
-      color:  rgba(0,139, 139, 1);
-      padding: 10px;
-      border-radius: 4px ;
+      width: 100%;
+      padding: 10px 15px;
+      margin: 0;
       display: flex;
       justify-content: space-around;}
-.login {margin-left: 20px;}
+.nav a {color:  rgba(0,139, 139, 1);
+        text-decoration: none;}
 
 .section_1  {background-color: #EFEFEF;
-            border: 2px dashed;
-            border-radius: 4px;
-            padding: 10px;
-            margin-bottom: 15px;
-            margin-top: 5px;}
+             border: 2px dashed;
+             border-radius: 4px;
+             padding: 10px;
+             margin-bottom: 15px;
+             margin-top: 5px;}
 
 .section_2 {background-color: skyblue;
             border: 1px dashed #000;
@@ -50,21 +51,21 @@ h1  {background-color: rgba(0,139, 139,0.8);
        flex-flow: wrap;}
 .grid img {width: 100px;}
 
-.footer {
-  width: 100%;
-  display: inline-block;
-  background-color: rgba(0,139, 139,0.8);
-  padding: 10px 15px;
-  margin: 0;
-  margin-top: 10px;
-}
+.footer {width: 100%;
+         display: inline-block;
+         background-color: rgba(0,139, 139,0.8);
+         padding: 10px 15px;
+         margin: 0;
+         margin-top: 10px;}
+.repo {color:  rgba(0,139, 139, 1);}
+.footer a{text-decoration: none;
+          color: #000;}
 </style>
 
         <h1>TRIEUDUONG VU Lab 2: CSS Selectors</h1>
 
-        
 <div class='nav'>
-        <div class='selectors'><a href='selectors.htmls'>Selectors</a></div>
+        <div class='selectors'><a href='selectors.html'>Selectors</a></div>
         <div class='login'><a href='index.html'>Main Page</a></div>
 </div>         
                
@@ -103,17 +104,17 @@ h1  {background-color: rgba(0,139, 139,0.8);
 
 <div class='grid'>
         <div class='grid img'>
-                <img src='./images/onigiri_1.png' width='75' alt='A mochi ball in a bubble'/>
-                <img src='./images/onigiri_2.png' width='75' alt='A dancing mochi ball'/>
-                <img src='./images/onigiri_3.png' width='75' alt='A mochi ball'/>
-                <img src='./images/onigiri_4.png' alt='A mochi ball with Bézier handles'/>
+                <img src='./images/mochi.gif' width='75' alt='A mochi ball in a bubble'/>
+                <img src='./images/mochi.jpg' width='75' alt='A dancing mochi ball'/>
+                <img src='./images/mochi.png' width='75' alt='A mochi ball'/>
+                <img src='./images/mochi.svg' alt='A mochi ball with Bézier handles'/>
         </div>
 </div>
-
 </div>
 
 <div class='footer'>
-        <h2>A link to my copy of the GitHub Repository</h2>
+        <hr>
+        <div class='repo'><p>A link to my copy of the GitHub Repository</p></div>
         <p>The Repo <a href='https://github.com/tvu28/INST377-Lab-Work'>link</a>.</p>  
 </div>
 
