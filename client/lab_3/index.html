@@ -9,7 +9,10 @@
 
 <style>
 .h4 {background-color: rgba(0,139, 139,0.8);
-     display: flex;}
+     display: flex;
+     justify-content: left;
+     padding: 0px 15px;
+     margin: 0;}
 
 .menu-container {color: #fff;
                  background-color: #5995DA; 
@@ -50,9 +53,10 @@
 .photo-grid {width: 900px;
              display: flex;
              justify-content: center;
-             flex-wrap: wrap;}
-.photo-grid-item {border: 1px solid #fff;
-                  width: 300px;
+             flex-wrap: wrap;
+             flex-direction: row-reverse;
+             align-items: center;}
+.photo-grid-item {width: 300px;
                   height: 300px;}
 
 .footer {display: flex;
@@ -71,7 +75,7 @@
 </style>
 
 <div class='h4'>
-  <h4>Trieuduong: Flexbox Demo</h4>
+  <h4>Trieuduong Vu: Lab 3 Flexbox Demo</h4>
 </div>
 
 <div class='menu-container'>
@@ -119,8 +123,3 @@
 </div>
   </body>
 </html>
-
-
-
-
-
