@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Trieuduong Vu Lab 5: HTML Form</title>
+    <link rel='stylesheet' href='styles.css'/>
+  </head>
+  <body>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #5D6063;
+  background-color: darkslategray;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.speaker-form-header {
+  text-align: left;
+  background-color: #f6d463;
+  border-radius: 3px;
+  width: 90%;
+  margin: 40px 0;
+  padding: 25px;
+}
+
+.speaker-form-header p {
+  font-size: 20px;
+  color: black;
+  
+}
+
+.form-row {color: #000000;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type='text'] {
+  background-color: #FFFFFF;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 15px;
+}
+</style>
+    <header
+      class='speaker-form-header'>
+      <p>Trieuduong Vu's Lab 5</p>
+    </header>
+
+    <div class='form-row'>
+        <label for='full-name'>First Name</label>
+        <input id='full-name' name='full-name' type='text'/>
+        <label for='food Preference'>Food Preference</label>
+        <input id='food-preference' name='food-preference' type='text'/>
+    </div>
+    
+  </body>
+</html>
